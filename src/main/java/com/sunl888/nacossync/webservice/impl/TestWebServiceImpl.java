@@ -25,6 +25,6 @@ public class TestWebServiceImpl implements TestWebService {
 
     @Override
     public String getConfig(String request) {
-        return "当前值：" + appConfig.getName();
+        return appConfig.getName();
     }
 }

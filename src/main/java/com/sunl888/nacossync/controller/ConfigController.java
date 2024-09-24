@@ -28,11 +28,8 @@ public class ConfigController {
 
     @GetMapping
     public ResponseEntity<Void> getConfig() {
-
         log.info("当前值:{}", appConfig.getName());
-
         log.info("从webService获取当前值:{}", testWebServiceRemote.getConfig(""));
-
         return ResponseEntity.ok().build();
     }
 
