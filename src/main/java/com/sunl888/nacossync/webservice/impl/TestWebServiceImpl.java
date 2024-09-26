@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 public class TestWebServiceImpl implements TestWebService {
-    @Resource
+    @Resource("appConfig")
     private AppConfig appConfig;
 
     @Override
